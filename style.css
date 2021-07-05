@@ -1,0 +1,72 @@
+html,
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+
+#videoBG {
+    position: fixed;
+    z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9) {
+    #videoBG {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    #videoBG {
+        width: auto;
+        height: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    #videoBG {
+        display: none;
+    }
+    body {
+        background: url('poster.png');
+        background-size: cover;
+    }
+}
+
+#textdiv {
+    border: 4px solid rgb(50, 13, 85);
+    height: 300px;
+    width: 300px;
+    border-radius: 36px;
+    background: #9b203a;
+    box-shadow: 7px 9px 10px rgb(70, 18, 70);
+    opacity: 0.8;
+}
+
+.box1 {
+    left: 8px;
+    margin-top: 140px;
+}
+
+#info {
+    width: 68%;
+    text-align: justify;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: x-large;
+    padding: 30px;
+    opacity: 0.9;
+    margin-top: 70px;
+    margin-left: 200px;
+    border-radius: 20px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(48, 175, 116);
+}
+
+#info_btn {
+    border: 4px solid black;
+    color: black;
+    background-color: aqua;
+    cursor: pointer;
+    opacity: 0.8;
+}
